@@ -5,6 +5,9 @@ const modalCloseBtn = document.querySelector('.modal__close');
 const heroBtn = document.querySelector('.hero .btn--primary');
 const ctaBtn = document.querySelector('.cta .cta__button');
 
+const alertOverlay = document.getElementById('alert-overlay');
+const alertCloseBtn = document.getElementById('alert-close-btn');
+
 const nameInput = document.getElementById('input-name');
 const emailInput = document.getElementById('input-email');
 const phoneInput = document.getElementById('input-phone');
@@ -20,18 +23,31 @@ const errorMessages = {
   phone: 'Telefone é obrigatório',
 };
 
-// Função abrir modal
+// Abrir modal
 function openModal() {
   modalOverlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
 
-// Função fechar modal
+// Fechar modal
 function closeModal() {
   modalOverlay.classList.remove('active');
   document.body.style.overflow = 'auto';
   resetForm();
 }
+
+// Abrir Alerta
+function openAlert() {
+  alertOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// Fechar alerta
+function closeAlert() {
+  alertOverlay.classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
 
 // Validação email
 function validateEmail(email) {
@@ -101,13 +117,25 @@ modalOverlay.addEventListener('click', (event) => {
   }
 });
 
+// Envia o formulário e abre o modal
 modalForm.addEventListener('submit', (event) => {
   event.preventDefault();
 
   if (validateForm()) {
     closeModal();
+    openAlert();
   }
 });
+
+// Evento de clique no alerta
+alertCloseBtn.addEventListener('click', closeAlert);
+
+alertOverlay.addEventListener('click', (event) => {
+  if (event.target === alertOverlay) {
+    closeAlert();
+  }
+});
+
 
 // eventos nos inputs de validação
 nameInput.addEventListener('blur', () => {
