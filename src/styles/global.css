@@ -46,6 +46,12 @@
   --color-accent-orange: #2A1A0F;
   --color-accent-blue: #0F1F2E;
   
+  --color-error: #fb2c36;
+  --color-error-bg: #0f172b;
+  
+  --color-modal-bg: #0f172b;
+  --color-modal-border: rgba(255, 255, 255, 0.1);
+  
   --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   
   --font-size-xs: 0.625rem;
