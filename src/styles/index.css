@@ -10,7 +10,7 @@
   display: flex;
   gap: var(--spacing-56);
   padding: var(--spacing-64) var(--spacing-80) var(--spacing-88) var(--spacing-80);
-  background-color: var(--color-black);
+  background-image: radial-gradient( #7c3aed49, #4d1d9545, var(--color-black),  var(--color-black));
   max-width: 100%;
   flex-wrap: wrap;
   align-items: center;
