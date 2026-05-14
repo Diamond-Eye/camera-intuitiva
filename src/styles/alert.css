@@ -34,12 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
 }
 
 .alert-success__icon {
-  color: #05df72;
+  width: 80px;
+  height: 80px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
