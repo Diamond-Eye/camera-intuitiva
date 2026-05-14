@@ -5,6 +5,7 @@
 @import url(cta-section.css);
 @import url(footer.css);
 @import url(responsiveness.css);
+@import url(modal.css);
 
 .landing-page {
   width: 100%;
