@@ -1,12 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camera Intuitiva</title>
+    <title>SmartCam AI - Câmera Intuitiva</title>
+    <link rel="stylesheet" href="src/styles/global.css" />
     <link rel="stylesheet" href="src/styles/index.css" />
   </head>
   <body>
+    <main class="landing-page">
+      <section class="hero">
+        <div class="hero__left">
+          <div class="badge">
+            <img src="./src/assets/icons/star.svg" alt="Star" class="badge__icon">
+            <span class="badge__text">LANÇAMENTO 2026</span>
+          </div>
+
+          <div class="title-stack">
+            <h1 class="title-stack__primary">Câmera que</h1>
+            <h1 class="title-stack__gradient">Pensa por Você</h1>
+          </div>
+
+          <p class="hero__subtitle">
+            Algoritmos analisam a cena em tempo real quando você mira a câmera, escolhem o melhor modo (comida, retrato, paisagem, animal, noite…) e ajustam ISO, exposição e foco para você. Menos tentativa e erro, mais fotos com cara de profissional.
+          </p>
+
+          <div class="hero__buttons">
+            <button class="btn btn--primary">Se inscreva para receber atualizações</button>
+            <button class="btn btn--secondary">Conhecer Recursos</button>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__number">6</div>
+              <p class="stat__label">Modos inteligentes</p>
+            </div>
+            <div class="stat">
+              <div class="stat__number">100%</div>
+              <p class="stat__label">Automático ao mirar</p>
+            </div>
+            <div class="stat">
+              <div class="stat__number">0</div>
+              <p class="stat__label">Sem ajuste manual obrigatório</p>
+            </div>
+          </div>
+
+          <div class="hero__chips">
+            <span class="chip">Detecção de cena</span>
+            <span class="chip">ISO &amp; exposição</span>
+            <span class="chip">Sugestão de ângulo</span>
+            <span class="chip">Preview ao vivo</span>
+          </div>
+        </div>
+
+        <div class="hero__phones">
+          <div class="phone phone--left">
+            <img src="./src/assets/images/cell-1.png" alt="Smartphone — tela A" class="phone__image">
+          </div>
+
+          <div class="phone phone--center">
+            <img src="./src/assets/images/camera.png" alt="Camera" class="phone__image">
+          </div>
+
+          <div class="phone phone--right">
+            <img src="./src/assets/images/cell-2.png" alt="Smartphone — tela B" class="phone__image">
+          </div>
+        </div>
+      </section>
+
+      <section class="phone-strip">
+        <h2 class="phone-strip__title">Telas reais em smartphones</h2>
+        <p class="phone-strip__description">
+          Modos inteligentes, guia de enquadramento e configurações profissionais em um clique.
+        </p>
+        <div class="phone-grid">
+          <div class="phone-card">
+            <img src="./src/assets/images/modo-automatico.gif" alt="Modo automático" class="phone-card__image">
+          </div>
+          <div class="phone-card">
+            <img src="./src/assets/images/enquadramento.gif" alt="Modo enquadramento" class="phone-card__image">
+          </div>
+          <div class="phone-card">
+            <img src="./src/assets/images/config-profissional.gif" alt="Configuração profissional" class="phone-card__image">
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="divider"></div>
+        <h2 class="features__title">Tecnologia que transforma</h2>
+        <p class="features__subtitle">
+          Do mirar ao clique: algoritmos classificam a cena, escolhem o modo certo e refinam parâmetros para cada situação. Sem menu infinito.
+        </p>
+
+        <div class="features__row">
+          <div class="feature-slot">
+            <img src="./src/assets/images/camera-completa.gif" alt="Camera completa" class="feature-slot__image">
+          </div>
+
+          <div class="feature-cards">
+            <div class="feature-card feature-card--color1">
+              <div class="feature-card__icon">
+                <img src="./src/assets/icons/brain.svg" alt="Brain" class="feature-card__icon-image">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Detecção automática de cena</h3>
+                <p class="feature-card__description">Reconhece comida, pessoas, paisagem, animais, baixa luz e mais! Pré-seleciona o modo que faz sentido para aquela foto.</p>
+              </div>
+            </div>
+            <div class="feature-card feature-card--color2">
+              <div class="feature-card__icon">
+                <img src="./src/assets/icons/ray.svg" alt="Ray" class="feature-card__icon-image">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Ajuste instantâneo de parâmetros</h3>
+                <p class="feature-card__description">ISO, exposição e foco são calibrados automaticamente para preservar detalhes, pele natural e cores fiéis à cena.</p>
+              </div>
+            </div>
+            <div class="feature-card feature-card--color3">
+              <div class="feature-card__icon">
+                <img src="./src/assets/icons/scan-line.svg" alt="Scan line" class="feature-card__icon-image">
+              </div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Sugestões de enquadramento</h3>
+                <p class="feature-card__description">Guias visuais sugerem melhor ângulo e posicionamento enquanto você compõe, útil para iniciantes e para ganhar tempo no dia a dia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta__icon-wrapper">
+          <img src="./src/assets/icons/gift.svg" alt="Gift" class="cta__icon">
+        </div>
+        <h2 class="cta__title">Cadastre-se para receber atualizações</h2>
+        <p class="cta__subtitle">
+          Receba novidades do projeto, acesso antecipado a demos e possíveis vouchers para quem quiser acompanhar de perto o lançamento.
+        </p>
+        <button class="cta__button">Quero ser atualizado(a)!</button>
+        <p class="cta__footer">
+          *Mais de 847 pessoas já deixaram o e-mail na lista de interesse.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <img src="./src/assets/icons/eye.svg" alt="Diamond eye" class="footer__icon">
+            <span class="footer__brand-text">Diamond eye</span>
+          </div>
+        </div>
+        <p class="footer__note">
+          © 2026 SmartCam AI — câmera intuitiva com modos e configurações guiados por algoritmos. Hardware em fase final; lançamento previsto para 05/2026.
+        </p>
+      </footer>
+    </main>
+
     <script src="src/scripts/index.js"></script>
   </body>
 </html>
