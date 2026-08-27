@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="src/styles/index.css" />
   </head>
   <body>
+
+        <header class="header">
+      <nav class="header__nav">
+        
+        <a href="#" class="header__logo">
+          Diamond Eye
+        </a>
+
+        <div class="header__links">
+          <a href="#solution">A Solução</a>
+          <a href="#audience">Público-Alvo</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#team">Nossa Equipe</a>
+        </div>
+
+      </nav>
+    </header>
+
     <main class="landing-page">
       <section class="hero">
         <div class="hero__left">
@@ -67,7 +85,122 @@
         </div>
       </section>
 
+            <section class="solution" id="solution">
+
+        <div class="solution__container">
+
+          <header class="solution__header">
+            <h2 class="solution__title">A solução</h2>
+
+            <p class="solution__subtitle">
+              Uma câmera inteligente que entende a cena e ajuda você a
+              capturar melhores fotos sem precisar dominar configurações
+              profissionais.
+            </p>
+          </header>
+
+          <div class="solution__grid">
+
+            <article class="solution__card">
+              <h3 class="solution__card-title">O problema</h3>
+
+              <p class="solution__card-text">
+                Fotografar em diferentes situações pode exigir conhecimento
+                sobre diversas configurações da câmera. ISO, exposição, foco,
+                enquadramento e outros ajustes podem tornar o processo mais
+                complicado para quem só quer registrar um momento.
+              </p>
+
+              <ul class="solution__list">
+                <li>Configurações difíceis de entender</li>
+                <li>Tentativa e erro para encontrar o melhor resultado</li>
+                <li>Tempo perdido ajustando a câmera</li>
+              </ul>
+            </article>
+
+            <article class="solution__card solution__card--highlight">
+              <h3 class="solution__card-title">Como funciona</h3>
+
+              <p class="solution__card-text">
+                O Modo Automático utiliza algoritmos para analisar a cena em tempo
+                real. A partir dessa análise, identifica o cenário e recomenda
+                os ajustes mais adequados para aquela situação.
+              </p>
+
+              <ul class="solution__list">
+                <li>Detecta automaticamente a cena</li>
+                <li>Seleciona o modo mais adequado</li>
+                <li>Ajusta ISO, exposição e foco</li>
+                <li>Oferece sugestões de enquadramento</li>
+              </ul>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="audience" id="audience">
+
+        <div class="audience__container">
+
+          <header class="audience__header">
+            <h2 class="audience__title">Para quem é destinado?</h2>
+
+            <p class="audience__subtitle">
+              Uma câmera pensada para criadores de conteúdo e estudantes que querem tirar
+              fotos melhores sem precisar dominar configurações profissionais.
+            </p>
+          </header>
+
+          <div class="audience__grid">
+
+            <article class="audience__card">
+              <h3 class="audience__card-title">Fotógrafos iniciantes</h3>
+
+              <p class="audience__card-text">
+                Tire fotos melhores sem precisar entender todas as
+                configurações de uma câmera profissional.
+              </p>
+            </article>
+
+            <article class="audience__card">
+              <h3 class="audience__card-title">Criadores de conteúdo</h3>
+
+              <p class="audience__card-text">
+                Capture imagens e vídeos com ajustes rápidos para diferentes
+                situações e ambientes.
+              </p>
+            </article>
+
+            <article class="audience__card">
+              <h3 class="audience__card-title">Viajantes</h3>
+
+              <p class="audience__card-text">
+                Registre paisagens, pessoas e momentos especiais sem perder
+                tempo procurando a configuração ideal.
+              </p>
+            </article>
+
+            <article class="audience__card">
+              <h3 class="audience__card-title">Uso no dia a dia</h3>
+
+              <p class="audience__card-text">
+                Uma experiência simples para quem quer apontar, fotografar
+                e conseguir bons resultados automaticamente.
+              </p>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
       <section class="phone-strip">
+
+      
         <h2 class="phone-strip__title">Telas reais em smartphones</h2>
         <p class="phone-strip__description">
           Modos inteligentes, guia de enquadramento e configurações profissionais em um clique.
@@ -128,6 +261,80 @@
           </div>
         </div>
       </section>
+      
+      <section class="gallery" id="gallery" style="padding: 60px 20px; background-color: #0b071e;">
+        <div class="gallery__container" style="max-width: 1200px; margin: 0 auto;">
+          <header class="gallery__header" style="text-align: center; margin-bottom: 40px;">
+            <h2 class="gallery__title" style="font-size: 2.5rem; color: #fff; margin-bottom: 10px;">Galeria de Capturas</h2>
+            <p class="gallery__subtitle" style="color: #a29bfe; font-size: 1.1rem;">
+              Veja fotos reais tiradas com os modos automáticos e inteligência artificial da nossa câmera.
+            </p>
+          </header>
+
+          <div class="gallery__grid" style="display: flex; flex-direction: row; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            
+            <div class="gallery__item" style="position: relative; overflow: hidden; border-radius: 12px; border: 1px solid #2d2454; flex: 1; min-width: 220px; max-width: 260px;">
+              <img src="./src/assets/images/foto_paisagem.jpg" alt="Foto no Modo Paisagem" class="gallery__img" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+              <span class="gallery__tag" style="position: absolute; bottom: 15px; left: 15px; background: rgba(11, 7, 30, 0.8); color: #ffd700; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; border: 1px solid #ffd700;">Modo Paisagem</span>
+            </div>
+
+            <div class="gallery__item" style="position: relative; overflow: hidden; border-radius: 12px; border: 1px solid #2d2454; flex: 1; min-width: 220px; max-width: 260px;">
+              <img src="./src/assets/images/foto_retrato.jpg" alt="Foto no Modo Retrato" class="gallery__img" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+              <span class="gallery__tag" style="position: absolute; bottom: 15px; left: 15px; background: rgba(11, 7, 30, 0.8); color: #ffd700; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; border: 1px solid #ffd700;">Modo Retrato</span>
+            </div>
+
+            <div class="gallery__item" style="position: relative; overflow: hidden; border-radius: 12px; border: 1px solid #2d2454; flex: 1; min-width: 220px; max-width: 260px;">
+              <img src="./src/assets/images/foto_noturno.jpg" alt="Foto no Modo Noturno" class="gallery__img" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+              <span class="gallery__tag" style="position: absolute; bottom: 15px; left: 15px; background: rgba(11, 7, 30, 0.8); color: #ffd700; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; border: 1px solid #ffd700;">Modo Noturno</span>
+            </div>
+
+            <div class="gallery__item" style="position: relative; overflow: hidden; border-radius: 12px; border: 1px solid #2d2454; flex: 1; min-width: 220px; max-width: 260px;">
+              <img src="./src/assets/images/foto_comida.jpg" alt="Foto no Modo Comida" class="gallery__img" style="width: 100%; height: 250px; object-fit: cover; display: block;">
+              <span class="gallery__tag" style="position: absolute; bottom: 15px; left: 15px; background: rgba(11, 7, 30, 0.8); color: #ffd700; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; border: 1px solid #ffd700;">Modo Comida</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="team" id="team" style="padding: 60px 20px; background-color: #0b071e;">
+        <div class="team__container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+          <header class="team__header" style="margin-bottom: 40px;">
+            <h2 class="team__title" style="font-size: 2.5rem; color: #fff; margin-bottom: 10px;">Nossa Equipe</h2>
+            <p class="team__subtitle" style="color: #a29bfe; font-size: 1.1rem;">
+              Os criadores da Diamond Eye.
+            </p>
+          </header>
+          
+          <div class="team__grid" style="display: flex; flex-direction: row; justify-content: center; gap: 24px; flex-wrap: wrap;">
+            
+            <div class="team__card" style="background: linear-gradient(145deg, #160f33, #0f0a26); border: 1px solid #2d2454; border-radius: 16px; padding: 30px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; flex: 1; max-width: 300px; min-width: 250px;">
+              <div class="team__avatar-wrapper" style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #ffd700; margin-bottom: 16px;">
+                <img src="./src/assets/images/luana.jpg" alt="Luana Lopes" class="team__img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+              <h3 class="team__name" style="color: #fff; font-size: 1.15rem; font-weight: 600; margin-bottom: 8px;">Luana Lopes Sventkauskas</h3>
+              <p class="team__role" style="color: #a29bfe; font-size: 0.9rem;">RM 569643</p>
+            </div>
+
+            <div class="team__card" style="background: linear-gradient(145deg, #160f33, #0f0a26); border: 1px solid #2d2454; border-radius: 16px; padding: 30px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; flex: 1; max-width: 300px; min-width: 250px;">
+              <div class="team__avatar-wrapper" style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #ffd700; margin-bottom: 16px;">
+                <img src="./src/assets/images/pollyana.jpg" alt="Pollyana Valverde" class="team__img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+              <h3 class="team__name" style="color: #fff; font-size: 1.15rem; font-weight: 600; margin-bottom: 8px;">Pollyana Valverde dos Santos</h3>
+              <p class="team__role" style="color: #a29bfe; font-size: 0.9rem;">RM 569871</p>
+            </div>
+
+            <div class="team__card" style="background: linear-gradient(145deg, #160f33, #0f0a26); border: 1px solid #2d2454; border-radius: 16px; padding: 30px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; flex: 1; max-width: 300px; min-width: 250px;">
+              <div class="team__avatar-wrapper" style="width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 3px solid #ffd700; margin-bottom: 16px;">
+                <img src="./src/assets/images/joao.jpg" alt="João Fernando" class="team__img" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+              <h3 class="team__name" style="color: #fff; font-size: 1.15rem; font-weight: 600; margin-bottom: 8px;">João Fernando G. Senziani</h3>
+              <p class="team__role" style="color: #a29bfe; font-size: 0.9rem;">RM 572144</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <section class="cta">
         <div class="cta__icon-wrapper">
@@ -142,7 +349,7 @@
           *Mais de 847 pessoas já deixaram o e-mail na lista de interesse.
         </p>
       </section>
-
+      
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__brand">
@@ -155,7 +362,6 @@
         </p>
       </footer>
     </main>
-
     <div id="modal-overlay" class="modal-overlay">
       <div class="modal">
         <div class="modal__header">
