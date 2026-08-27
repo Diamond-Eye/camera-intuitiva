@@ -12,6 +12,7 @@
 @import url(alert.css);
 @import url("gallery.css");
 @import url("teams.css");
+@import url("simulator.css");
 
 .landing-page {
   width: 100%;
