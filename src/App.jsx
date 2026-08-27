@@ -8,11 +8,13 @@ import Features from './components/Features/Features.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Team from './components/Team/Team.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import CTA from './components/CTA/CTA.jsx';
 import Modal from './components/Modal/Modal.jsx';
 import AlertSuccess from './components/AlertSuccess/AlertSuccess.jsx';
+import { useLocalStorage } from './hooks/useLocalStorage.js';
 
 function App() {
-  const [inscricoes, setInscricoes] = useState([]);
+  const [inscricoes, setInscricoes] = useLocalStorage('inscricoes', []);
   const [modalAberto, setModalAberto] = useState(false);
   const [alertaAberto, setAlertaAberto] = useState(false);
 
@@ -45,6 +47,7 @@ function App() {
         <Features />
         <Gallery />
         <Team />
+        <CTA totalInscritos={inscricoes.length} aoAbrirModal={abrirModal} />
       </main>
 
       <Footer />
